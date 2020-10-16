@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "minVersion": "0.7.10",
+  "package": "fi.joniaromaa.minecrafthook.forge1_8.mixins",
+  "refmap": "mixins.minecrafthook.refmap.json",
+  "target": "@env(DEFAULT)",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+  	"MixinMinecraft"
+  ]
+}

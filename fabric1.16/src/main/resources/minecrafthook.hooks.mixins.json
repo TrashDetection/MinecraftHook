@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8.1",
+  "package": "fi.joniaromaa.minecrafthook.fabric1_16.mixins.hooks",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "MixinMinecraft_Hooks",
+    "MixinMinecraftVersion_Hooks",
+
+    "network.MixinNetworkState_Hooks",
+    "network.incoming.PlayerMoveC2SPacket_Hooks"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

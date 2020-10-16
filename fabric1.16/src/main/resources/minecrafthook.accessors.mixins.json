@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8.1",
+  "package": "fi.joniaromaa.minecrafthook.fabric1_16.mixins.accessors",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "NetworkStateAccessor",
+    "NetworkStateAccessor$PacketHandlerAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,34 @@
+plugins {
+	id "java"
+	id "fabric-loom" version "0.5-SNAPSHOT"
+}
+
+version = "1.0.0"
+group = "fi.joniaromaa.minecrafthook"
+
+repositories {
+	mavenLocal()
+	mavenCentral()
+	jcenter()
+}
+
+dependencies {
+	minecraft "com.mojang:minecraft:1.16.3"
+	mappings "net.fabricmc:yarn:1.16.3+build.17:v2"
+	modImplementation "net.fabricmc:fabric-loader:0.10.0+build.208"
+	
+    implementation(project(":common"))
+}
+
+processResources {
+	inputs.property "version", project.version
+
+	from(sourceSets.main.resources.srcDirs) {
+		include "fabric.mod.json"
+		expand "version": project.version
+	}
+
+	from(sourceSets.main.resources.srcDirs) {
+		exclude "fabric.mod.json"
+	}
+}

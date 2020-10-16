@@ -1,0 +1,23 @@
+{
+  "required": true,
+  "minVersion": "0.8.1",
+  "package": "fi.joniaromaa.minecrafthook.fabric1_16.mixins.render",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "MixinMain_Render",
+    "MixinMinecraft_Render",
+    "MixinWindowProvider_Render",
+    "MixinWindow_Render",
+    "MixinFramebuffer_Render",
+    "MixinMouse_Render",
+    "MixinKeyboard_Render",
+    "MixinNarratorManager_Render",
+    "MixinUtil_Render",
+    "MixinReloadableResourceManagerImpl_Render",
+    "MixinSplashScreen_Render",
+    "MixinFileResourcePackProvider_Render"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

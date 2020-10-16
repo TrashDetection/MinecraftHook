@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "minecrafthook",
+  "version": "${version}",
+  "name": "Minecraft Hook",
+  "description": "Minecraft Hook!",
+  "authors": [
+    "isokissa3"
+  ],
+  "license": "CC0-1.0",
+  "environment": "*",
+  "entrypoints": {
+  },
+  "mixins": [
+    "minecrafthook.render.mixins.json",
+    "minecrafthook.accessors.mixins.json",
+    "minecrafthook.hooks.mixins.json"
+  ],
+  "depends": {
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
